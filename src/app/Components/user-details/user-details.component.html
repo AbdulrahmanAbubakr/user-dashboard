@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4" *ngIf="user">
+        <div class="card mb-4" style="width: 100%;">
+          <img [src]="user.avatar" class="card-img-top" [alt]="user.first_name">
+          <div class="card-body">
+            <h2 class="card-title">{{user.id}}</h2>
+            <h2 class="card-title">{{user.first_name}} {{user.last_name}}</h2>          
+            <a class="btn btn-danger" [routerLink]="['/users']">back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
